@@ -18,20 +18,18 @@
 		flex-basis: 50%;
 
 		h1 {
-			color: $color__light-blue;
-			font-weight: 500;
-
-			mark {
-				background-color: unset;
-				color: #fff;
-				white-space: nowrap;
-				font-weight: 600;
-			}
+			margin-top: 1rem;
 		}
 
 		p {
 			font-size: 20px;
 			margin-bottom: 30px;
+
+			mark {
+				background-color: unset;
+				color: $color__lime-green;
+				font-weight: 400;
+			}
 		}
 	}
 
@@ -47,7 +45,7 @@
 @media screen and (max-width: 991px) {
 	#hero {
 		flex-direction: column;
-		padding-top: 0;
+		padding-top: 20px;
 
 		.hero__image {
 			padding-right: 0;

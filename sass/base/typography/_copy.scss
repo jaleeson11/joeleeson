@@ -2,3 +2,9 @@ p {
 	margin-bottom: 1rem;
 	line-height: 1.6;
 }
+
+mark {
+	background-color: unset;
+	color: $color__lime-green;
+	font-weight: 400;
+}

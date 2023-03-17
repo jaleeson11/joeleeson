@@ -15,15 +15,7 @@
 
 /* Base
 --------------------------------------------- */
-@import "base/elements/body";
-@import "base/typography/headings";
-@import "base/typography/copy";
-@import "base/elements/links";
-@import "base/elements/lists";
-@import "base/elements/media";
-@import "base/elements/sections";
-@import "base/elements/icons";
-@import "base/elements/buttons";
+@import "base/base";
 
 /* Layout
 --------------------------------------------- */
@@ -33,7 +25,6 @@
 /* Sections
 --------------------------------------------- */
 @import "sections/hero";
-@import "sections/about-me";
 @import "sections/skills";
 @import "sections/projects";
 @import "sections/contact";

@@ -8,9 +8,10 @@ section {
 	}
 
 	.section-container {
-		background-color: $color__light-navy;
+		background-color: #fff;
 		padding: 40px;
 		border-radius: 5px;
+		box-shadow: 0 3px 15px 0 rgba(0,0,0,0.2);
 
 		&.section-container--skills {
 			padding-bottom: 0;

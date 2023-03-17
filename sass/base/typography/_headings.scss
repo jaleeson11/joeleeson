@@ -23,12 +23,12 @@ h5 {@include to_rem($font-size__h5 * $multiplier__small)}
 small {
 	display: inline-block;
 	font-size: 0.75rem;
-	font-weight: 500;
-	color: $color__light-blue;
+	font-weight: 600;
+	color: $color__brand-blue;
 	padding: 0 5px 10px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	border-bottom: 4px solid $color__light-blue;
+	border-bottom: 4px solid $color__brand-blue;
 }
 
 @media screen and (min-width: $screen__small) {

@@ -1,13 +1,9 @@
 .icon {
 	display: inline-block;
 	padding: 10px;
-	background-color: $color__light-navy;
 	border-radius: 5px;
 	transition: box-shadow .2s;
-
-	&.icon--dark {
-		background-color: $color__dark-navy;
-	}
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
 
 	img {
 		width: 25px;
@@ -15,6 +11,6 @@
 	}
 
 	&:hover {
-		box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); 
+		box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4); 
 	}
 }

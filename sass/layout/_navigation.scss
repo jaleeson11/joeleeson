@@ -1,7 +1,7 @@
 header {
 	position: fixed;
 	width: 100%;
-	background-color: $color__dark-navy;
+	background-color: #fff;
 	transition: transform 0.2s;
 	padding: 15px 0;
 
@@ -21,27 +21,18 @@ header {
 		.navbar__nav {
 			display: flex;
 			text-align: center;
-			flex-basis: 50%;
+			flex-basis: 40%;
 			flex-wrap: wrap;
 		
 			.nav-item {
 				flex-grow: 1;
 	
 				.nav-link {
-					color: $color__light-blue;
+					color: $color__text-main;
 					text-transform: uppercase;
 					font-weight: 500;
 					transition: color 0.5s;
-	
-					&:hover {
-						color: $color__lime-green;
-					}
-				}
-	
-				&.active {
-					.nav-link {
-						color: $color__lime-green;
-					}
+					letter-spacing: 1px;
 				}
 			}
 		}
@@ -68,7 +59,7 @@ header {
 				display: block;
 				height: 3px;
 				width: 40px;
-				background-color: #fff;
+				background-color: $color__text-main;
 				border-radius: 5px;
 				margin: 10px 0;
 				transition: all .65s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -111,7 +102,7 @@ header {
 						transform: rotate(45deg) scale(.8);
 	
 						span {
-							// background-color: $color__dark-navy;
+							background-color: $color__brand-blue;
 	
 							&:first-child {
 								transform: translateY(13px) rotate(0deg);
@@ -133,6 +124,7 @@ header {
 	
 					.nav-link {
 						font-size: 28px;
+						color: #fff;
 					}
 				}
 			}

@@ -1,43 +1,41 @@
 section {
-	padding: 6.25rem 0;
-
-	.heading {
-		h2 {
-			margin-top: 1rem;
-		}
-	}
+	padding: 3.75rem 0;
 
 	.section-container {
 		background-color: #fff;
-		padding: 2.5rem;
+		padding: 1.25rem;
 		border-radius: 5px;
 		box-shadow: 0 3px 15px 0 rgba(0,0,0,0.2);
 
 		&.section-container--skills {
-			padding-bottom: 0;
+			padding-top: 2.5rem;
 		}
 
 		&.section-container--project:not(:last-child),
 		&.section-container--contact {
-			margin-bottom: 2.5rem;
+			margin-bottom: 1.25rem;
 		}
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: $screen__medium) {
 	section {
-		padding: 3.75rem 0;
+		padding: 6.25rem 0;
+
+		.heading h2 {
+			margin-top: 1rem;
+		}
 
 		.section-container {
-			padding: 1.25rem;
+			padding: 2.5rem;
 
 			&.section-container--skills {
-				padding-top: 2.5rem;
+				padding-bottom: 0;
 			}
 
 			&.section-container--project:not(:last-child),
 			&.section-container--contact {
-				margin-bottom: 1.25rem;
+				margin-bottom: 2.5rem;
 			}
 		}
 	}

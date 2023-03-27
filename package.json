@@ -28,6 +28,6 @@
     "sass-loader": "^12.1.0"
   },
   "browserslist": [
-    "last 40 versions"
+    ">0.3%, last 2 versions, not dead"
   ]
 }

@@ -1,6 +1,10 @@
 section {
 	padding: 3.75rem 0;
 
+	.heading h2 {
+		margin-top: 1rem;
+	}
+
 	.section-container {
 		background-color: #fff;
 		padding: 1.25rem;
@@ -21,10 +25,6 @@ section {
 @media screen and (min-width: $screen__medium) {
 	section {
 		padding: 6.25rem 0;
-
-		.heading h2 {
-			margin-top: 1rem;
-		}
 
 		.section-container {
 			padding: 2.5rem;

@@ -6344,25 +6344,27 @@ header .navbar .navbar__nav .nav-item .nav-link {
   color: #212121;
   text-transform: uppercase;
   font-weight: 500;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
   letter-spacing: 1px;
   padding: 0.5rem;
-  position: relative;
 }
-header .navbar .navbar__nav .nav-item .nav-link::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 4px;
-  width: 0;
-  background: #6161FF;
-  -webkit-transition: width 0.3s ease;
-  transition: width 0.3s ease;
-}
-header .navbar .navbar__nav .nav-item .nav-link:hover::after {
-  width: 100%;
+@media (hover: hover) {
+  header .navbar .navbar__nav .nav-item .nav-link {
+    position: relative;
+  }
+  header .navbar .navbar__nav .nav-item .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 0;
+    background: #6161FF;
+    -webkit-transition: width 0.3s ease;
+    transition: width 0.3s ease;
+  }
+  header .navbar .navbar__nav .nav-item .nav-link:hover::after {
+    width: 100%;
+  }
 }
 header .navbar .navbar__logo,
 header .navbar .navbar__social {
@@ -6525,7 +6527,7 @@ section .section-container.section-container--project:not(:last-child), section 
   margin-top: 1rem;
 }
 #hero .hero__content p {
-  font-size: 20px;
+  font-size: 1.25rem;
   margin-bottom: 30px;
 }
 #hero .hero__social {

@@ -22,14 +22,33 @@ header {
 			display: flex;
 		
 			.nav-item {
-				padding: 0 1.56rem;
+				margin: 0 1.25rem;
 	
 				.nav-link {
 					color: $color__text-main;
 					text-transform: uppercase;
 					font-weight: 500;
-					transition: color 0.5s;
 					letter-spacing: 1px;
+					padding: 0.5rem;
+
+					@media (hover: hover) {
+						position: relative;
+
+						&::after {
+							content: "";
+							position: absolute;
+							bottom: 0;
+							left: 0;
+							height: 4px;
+							width: 0;
+							background: $color__brand-blue;
+							transition: width 0.3s ease;
+						}
+
+						&:hover::after {
+							width: 100%;
+						}
+					}
 				}
 			}
 		}
@@ -65,7 +84,7 @@ header {
 	}
 }
 
-@media screen and (max-width: 991px) { 
+@media screen and (max-width: $screen__large) { 
 	header {
 		position: static;
 		padding-bottom: 0;
@@ -119,6 +138,7 @@ header {
 	
 				.nav-item {
 					padding-bottom: 2rem;
+					margin: 0;
 	
 					.nav-link {
 						font-size: 1.75rem;

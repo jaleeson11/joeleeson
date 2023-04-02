@@ -2,7 +2,7 @@ import $ from '../node_modules/jquery/dist/jquery'
 
 const nav = $('#navbarNav');
 const toggle = $('.navbar__toggle');
-const links = $('.nav-link');
+const links = $('.nav__link');
 
 toggle.on('click', () => {
 	nav.toggleClass('open');

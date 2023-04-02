@@ -1,0 +1,50 @@
+.section {
+	padding: 3.75rem 0;
+
+	.section__heading {
+		margin-top: 1rem;
+	}
+
+	.section__container {
+		background-color: #fff;
+		padding: 1.25rem;
+		border-radius: 5px;
+		box-shadow: 0 3px 15px 0 rgba(0,0,0,0.2);
+
+		&.section__container--skills {
+			padding-top: 2.5rem;
+		}
+
+		.section__list {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 2.5rem;
+			
+			&--col {
+				flex-direction: column;
+			}
+
+			.section__item {
+				flex: 1;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $screen__medium) {
+	.section {
+		padding: 6.25rem 0;
+
+		.section__container {
+			padding: 2.5rem;
+
+			&.section__container--skills {
+				padding-bottom: 0;
+			}
+
+			.section__list {
+				gap: 4rem;
+			}
+		}
+	}
+}

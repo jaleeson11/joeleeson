@@ -1,29 +1,29 @@
-.skills__list {
+.skills {
 	display: flex;
 	flex-wrap: wrap;
 
-	.skill-item {
+	.skills__item {
 		text-align: center;
-		flex: 1 20%;
+		flex: 1 30%;
 		padding: 0 5px;
 		margin-bottom: 60px;
 		font-weight: 500;
 
-		img {
+		.skills__image {
 			height: 40px;
 		}
 
-		span {
+		.skills__label {
 			display: block;
 			margin-top: 10px;
 		}
 	}
 }
 
-@media screen and (max-width: 768px) {
-	.skills__list {
-		.skill-item {
-			flex-basis: 30%;
+@media screen and (min-width: $screen__large) {
+	.skills {
+		.skills__item {
+			flex-basis: 20%;
 		}
 	}
 }

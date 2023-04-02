@@ -1,6 +1,6 @@
 import Headroom from "headroom.js";
 
-const nav = document.querySelector('header');
+const nav = document.querySelector('.navbar');
 const headroom = new Headroom(nav, {
 	offset: 150
 });

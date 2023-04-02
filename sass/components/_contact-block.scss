@@ -1,0 +1,28 @@
+.contact-block {
+	background-color: #fff;
+	min-width: 100%;
+	padding: 2.5rem;
+	border-radius: 5px;
+	box-shadow: 0 3px 15px 0 rgba(0,0,0,0.2);
+	text-align: center;
+
+	&__details {
+		font-size: 1.25rem;
+		color: $color__text-main;
+		margin: 15px 0 10px 0;
+	}
+
+	&__prompt {
+		border-bottom: none;
+	}
+}
+
+@media screen and (min-width: $screen__large) {
+	.contact-block {
+		min-width: 350px;
+
+		&__details {
+			font-size: 1.5rem;
+		}
+	}
+}

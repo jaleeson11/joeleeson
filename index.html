@@ -11,253 +11,249 @@
 </head>
 <body>
 	<header>
-		<nav class="navbar container">
-			<div class="navbar__logo">
-				<img src="assets/images/logo.png" alt="Logo">
+		<nav class="navbar" aria-label="Primary">
+			<div class="container">
+				<div class="navbar__inner">
+					<img class="navbar__logo" src="assets/images/logo.png" alt="Logo">
+					<ul class="navbar__nav nav" id="navbarNav">
+						<li class="nav__item">
+							<a href="#about-me" class="nav__link">
+								Me
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="#skills" class="nav__link">
+								Skills
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="#projects" class="nav__link">
+								Work
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="#contact" class="nav__link">
+								Contact
+							</a>
+						</li>
+					</ul>
+					<button class="navbar__toggle" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<button class="btn-scroll-top">
+						<img src="assets/images/double-arrow-top.svg" alt="Double Arrow Top">
+					</button>
+				</div>
 			</div>
-			<ul class="navbar__nav" id="navbarNav">
-				<li class="nav-item">
-					<a href="#about-me" class="nav-link">
-						Me
-					</a>
-				</li>
-				<li class="nav-item skills">
-					<a href="#skills" class="nav-link">
-						Skills
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="#projects" class="nav-link">
-						Work
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="#contact" class="nav-link">
-						Contact
-					</a>
-				</li>
-			</ul>
-			<button class="navbar__toggle" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
-				<span></span>
-				<span></span>
-				<span></span>
-			</button>
-			<button class="btn-scroll-top">
-				<img src="assets/images/double-arrow-top.svg" alt="Double Arrow Top">
-			</button>
 		</nav>
+		<div class="container">
+			<section class="hero">
+				<img class="hero__image" src="assets/images/profile-photo.jpg" alt="Profile Photo">
+				<div class="hero__content">
+					<small class="hero__sub-heading">hi there!</small>
+					<h1 class="hero__heading">I'm Joe</h1>
+					<p class="hero__text">A <mark>Freelance Web Developer</mark> passionate about creating stylish frontend web solutions for small businesses and individuals within the UK.</p>
+					<ul class="hero__socials">
+						<li class="hero__social">
+							<a href="https://github.com/jaleeson11" class="hero__link" target="_blank">
+								<span class="icon">
+									<img class="icon__image" src="assets/images/github.svg" alt="GitHub Page">
+								</span>
+							</a>
+						</li>
+						<li class="hero__social">
+							<a href="https://www.linkedin.com/in/joe-leeson-1328411b2/" class="hero__link" target="_blank">
+								<span class="icon">
+									<img class="icon__image" src="assets/images/linkedin.svg" alt="LinkedIn Profile">
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</header>
 	<main>
 		<div class="container">
-			<section id="hero">
-				<div class="hero__image">
-					<img src="assets/images/profile-photo.jpg" alt="Profile Photo">
+			<section id="about-me" class="section">
+				<header class="section__header">
+					<small class="section__sub-heading">here's a little bit</small>
+					<h2 class="section__heading">About Me</h2>
+				</header>
+				<div class="section__container">
+					<p>I'm a <mark>Freelance Web Developer</mark> based in <mark>Brighton, UK</mark>, who has over 5 years experience building and working on various web solutions ranging from simple informational pages to large ecommerce stores.</p>
+					<p>As a freelancer, I specialise in building <mark>bespoke service based websites</mark> for small businesses and individuals within the UK. The wesbites I create are typically built in <mark>WordPress</mark> - a powerful content management system that gives you the ability to manage your website through an easy to use admin panel (no coding knowlege required!). On the frontend of things, I always strive to create design themes that center around <mark>usability and brand identity</mark>, so you can expect the design of your website to strike a nice balance between style, being user friendly across all devices, and promoting your brand.</p>
+					<p>I'm a hardworking, punctual, and trustful individual with good communication skills. I always stay <mark>current with industry standards</mark> and make it my mission to constantly improve every aspect of my work. If you're intersted, please don't hesitate to get in touch, I'd love to discuss your requirements and what I can offer in greater detail.</p>
 				</div>
-				<div class="hero__content">
-					<small>hi there!</small>
-					<h1>I'm Joe</h1>
-					<p>A <mark>Freelance Web Developer</mark> passionate about creating stylish frontend web solutions for small businesses and individuals within the UK.</p>
-					<ul class="hero__social">
-						<li>
-							<a href="https://github.com/jaleeson11" target="_blank">
-								<span class="icon">
-									<img src="assets/images/github.svg" alt="GitHub">
-								</span>
-							</a>
+			</section>
+			<section id="skills" class="section">
+				<header class="section__header">
+					<small class="section__sub-heading">here are some of my</small>
+					<h2 class="section__heading">Skills</h2>
+				</header>
+				<div class="section__container section__container--skills">
+					<ul class="section__skills skills">
+						<li class="skills__item">
+							<img class="skills__image" src="assets/images/html5.svg" alt="">
+							<span class="skills__label">HTML</span>
 						</li>
-						<li>
-							<a href="https://www.linkedin.com/in/joe-leeson-1328411b2/" target="_blank">
-								<span class="icon">
-									<img src="assets/images/linkedin.svg" alt="LinkedIn">
-								</span>
-							</a>
+						<li class="skills__item">
+							<img class="skills__image" src="assets/images/css3-alt.svg" alt="">
+							<span class="skills__label">CSS</span>
+						</li>
+						<li class="skills__item">
+							<img class="skills__image" src="assets/images/js-square.svg" alt="">
+							<span class="skills__label">JavaScript</span>
+						</li>
+						<li class="skills__item">
+							<img class="skills__image" src="assets/images/php.svg" alt="">
+							<span class="skills__label">PHP</span>
+						</li>
+						<li class="skills__item">
+							<img class="skills__image" src="assets/images/jquery.svg" alt="">
+							<span class="skills__label">jQuery</span>
+						</li>
+						<li class="skills__item">
+							<img class="skills__image" src="assets/images/sass.svg" alt="">
+							<span class="skills__label">SASS</span>
+						</li>
+						<li class="skills__item">
+							<img class="skills__image" src="assets/images/vuejs.svg" alt="">
+							<span class="skills__label">Vue.js</span>
+						</li>
+						<li class="skills__item">
+							<img class="skills__image" src="assets/images/magento.svg" alt="">
+							<span class="skills__label">Magento</span>
+						</li>
+						<li class="skills__item">
+							<img class="skills__image" src="assets/images/wordpress.svg" alt="">
+							<span class="skills__label">WordPress</span>
+						</li>
+						<li class="skills__item">
+							<img class="skills__image" src="assets/images/laravel.svg" alt="">
+							<span class="skills__label">Laravel</span>
 						</li>
 					</ul>
 				</div>
 			</section>
-			<section id="about-me">
-				<div class="heading">
-					<small>here's a little bit</small>
-					<h2>About Me</h2>
-				</div>
-				<div class="section-container">
-					<div class="about-me__content">
-						<p>I'm a <mark>Freelance Web Developer</mark> based in <mark>Brighton, UK</mark>, who has over 5 years experience building and working on various web solutions ranging from simple informational pages to large ecommerce stores.</p>
-						<p>As a freelancer, I specialise in building <mark>bespoke service based websites</mark> for small businesses and individuals within the UK. The wesbites I create are typically built in <mark>WordPress</mark> - a powerful content management system that gives you the ability to manage your website through an easy to use admin panel (no coding knowlege required!). On the frontend of things, I always strive to create design themes that center around <mark>usability and brand identity</mark>, so you can expect the design of your website to strike a nice balance between style, being user friendly across all devices, and promoting your brand.</p>
-						<p>I'm a hardworking, punctual, and trustful individual with good communication skills. I always stay <mark>current with industry standards</mark> and make it my mission to constantly improve every aspect of my work. If you're intersted, please don't hesitate to get in touch, I'd love to discuss your requirements and what I can offer in greater detail.</p>
+			<section id="projects" class="section">
+				<header class="section__header">
+					<small class="section__sub-heading">check out some of my</small>
+					<h2 class="section__heading">Latest Projects</h2>
+				</header>
+				<div class="section__container">
+					<div class="section__list section__list--col">
+						<article class="section__item project">
+							<img class="project__image" src="assets/images/elliemoatt-thumb.jpg" alt="Ellie M Therapy Homepage Screenshot">
+							<div class="project__info">
+								<header class="project__header">
+									<h3 class="project__title">Ellie M Therapy</h3>
+									<ul class="project__tags">
+										<li class="project__tag">WordPress</li>
+										<li class="project__tag">CSS</li>
+										<li class="project__tag">PHP</li>
+									</ul>
+								</header>
+								<div class="project__description">
+									<p>Ellie M Therapy is a custom WordPress theme built for a freelance client that specialises in child therapy. The goal for this project was to create a theme that communicated the clients expertise and services through a calming and friendly UI.</p>
+								</div>
+								<footer class="project__footer">
+									<ul class="project__links">
+										<li class="project__link-item">
+											<a href="https://elliemoattherapy.co.uk/" class="project__link" target="_blank">Live</a>
+										</li>
+										<li class="project__link-item">
+											<a href="https://github.com/jaleeson11/elliemoatt" class="project__link" target="_blank">Repo</a>
+										</li>
+									</ul>
+								</footer>
+							</div>
+						</article>
+						<article class="section__item project">
+							<img class="project__image" src="assets/images/myndjournal-thumb.jpg" alt="Mynd Journal Homepage Screenshot">
+							<div class="project__info">
+								<header class="project__header">
+									<h3 class="project__title">Mynd Journal</h3>
+									<ul class="project__tags">
+										<li class="project__tag">Laravel</li>
+										<li class="project__tag">PHP</li>
+										<li class="project__tag">Vue.js</li>
+									</ul>
+								</header>
+								<div class="project__description">
+									<p>Based on cognitive-behavioural therapy (CBT), Mynd Journal is a two-part journalling application designed to help the user identify negative thinking patterns and develop a more balanced perspective.</p>
+								</div>
+								<footer class="project__footer">
+									<ul class="project__links">
+										<li class="project__link-item">
+											<a href="https://github.com/jaleeson11/myndjournal" class="project__link" target="_blank">Repo</a>
+										</li>
+									</ul>
+								</footer>
+							</div>
+						</article>
+						<article class="section__item project">
+							<img class="project__image" src="assets/images/eirerepublic-thumb.jpg" alt="EireRepublic Homepage Screenshot">
+							<div class="project__info">
+								<header class="project__header">
+									<h3 class="project__title">EireRepublic</h3>
+									<ul class="project__tags">
+										<li class="project__tag">WordPress</li>
+										<li class="project__tag">CSS</li>
+										<li class="project__tag">PHP</li>
+									</ul>
+								</header>
+								<div class="project__description">
+									<p>EireRepublic is a custom WordPress theme built for an all-Irish themed blog. This project involved restructuring how WordPress was built into the site to make it easier to manage from the admin panel, as well as redesigning the user interface.</p>
+								</div>
+								<footer class="project__footer">
+									<ul class="project__links">
+										<li class="project__link-item">
+											<a href="https://github.com/jaleeson11/eirerepublic" class="project__link" target="_blank">Repo</a>
+										</li>
+									</ul>
+								</footer>
+							</div>
+						</article>
 					</div>
 				</div>
 			</section>
-			<section id="skills">
-				<div class="heading">
-					<small>here are some of my</small>
-					<h2>Skills</h2>
-				</div>
-				<div class="section-container section-container--skills">
-					<ul class="skills__list">
-						<li class="skill-item">
-							<img src="assets/images/html5.svg" alt="HTML5">
-							<span>HTML</span>
-						</li>
-						<li class="skill-item">
-							<img src="assets/images/css3-alt.svg" alt="CSS3">
-							<span>CSS</span>
-						</li>
-						<li class="skill-item">
-							<img src="assets/images/js-square.svg" alt="JavaScript">
-							<span>JavaScript</span>
-						</li>
-						<li class="skill-item">
-							<img src="assets/images/php.svg" alt="PHP">
-							<span>PHP</span>
-						</li>
-						<li class="skill-item">
-							<img src="assets/images/jquery.svg" alt="jQuery">
-							<span>jQuery</span>
-						</li>
-						<li class="skill-item">
-							<img src="assets/images/sass.svg" alt="SASS">
-							<span>SASS</span>
-						</li>
-						<li class="skill-item">
-							<img src="assets/images/vuejs.svg" alt="Vue.js">
-							<span>Vue.js</span>
-						</li>
-						<li class="skill-item">
-							<img src="assets/images/magento.svg" alt="Magento">
-							<span>Magento</span>
-						</li>
-						<li class="skill-item">
-							<img src="assets/images/wordpress.svg" alt="WordPress">
-							<span>WordPress</span>
-						</li>
-						<li class="skill-item">
-							<img src="assets/images/laravel.svg" alt="Laravel">
-							<span>Laravel</span>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<section id="projects">
-				<div class="heading">
-					<small>check out some of my</small>
-					<h2>Latest Projects</h2>
-				</div>
-				<div class="section-container section-container--project">
-					<article class="project">
-						<div class="project__thumb">
-							<img src="assets/images/elliemoatt-thumb.jpg" alt="Ellie Moatt Thumbnail">
+			<section id="contact" class="section">
+				<header class="section__header">
+					<small class="section__sub-heading">feel free to</small>
+					<h2 class="section__heading">Get In Touch</h2>
+				</header>
+				<div class="section__container section__container--contact">
+					<div class="section__list">
+						<div class="section__item contact-block">
+							<a href="mailto: jaleeson11@gmail.com" class="contact-block__link">
+								<i class="icon">
+									<img class="icon__image" src="assets/images/envelope.svg" alt="Email Me">
+								</i>
+								<p class="contact-block__details">jaleeson11@gmail.com</p>
+								<small class="contact-block__prompt">email me</small>
+							</a>
 						</div>
-						<div class="project__content">
-							<div class="project__header">
-								<div class="project__title">
-									<h3>Ellie M Therapy</h3>
-								</div>
-								<ul class="project__tags">
-									<li>WordPress</li>
-									<li>CSS</li>
-									<li>PHP</li>
-								</ul>
-							</div>
-							<div class="project__description">
-								<p>Ellie M Therapy is a custom WordPress theme built for a freelance client that specialises in child therapy. The goal for this project was to create a theme that communicated the clients expertise and services through a calming and friendly UI.</p>
-							</div>
-							<ul class="project__links">
-								<li><a href="https://elliemoattherapy.co.uk/" target="_blank">Live</a></li>
-								<li><a href="https://github.com/jaleeson11/elliemoatt" target="_blank">Repo</a></li>
-							</ul>
-						</div>
-					</article>
-				</div>
-				<div class="section-container section-container--project">
-					<article class="project">
-						<div class="project__thumb">
-							<img src="assets/images/myndjournal-thumb.jpg" alt="Mynd Journal Thumbnail">
-						</div>
-						<div class="project__content">
-							<div class="project__header">
-								<div class="project__title">
-									<h3>Mynd Journal</h3>
-								</div>
-								<ul class="project__tags">
-									<li>Laravel</li>
-									<li>PHP</li>
-									<li>Vue.js</li>
-								</ul>
-							</div>
-							<div class="project__description">
-								<p>Based on cognitive-behavioural therapy (CBT), Mynd Journal is a two-part journalling application designed to help the user identify negative thinking patterns and develop a more balanced perspective.</p>
-							</div>
-							<ul class="project__links">
-								<li><a href="https://github.com/jaleeson11/myndjournal" target="_blank">Repo</a></li>
-							</ul>
-						</div>
-					</article>
-				</div>
-				<div class="section-container section-container--project">
-					<article class="project">
-						<div class="project__thumb">
-							<img src="assets/images/eirerepublic-thumb.jpg" alt="EireRepublic Thumbnail">
-						</div>
-						<div class="project__content">
-							<div class="project__header">
-								<div class="project__title">
-									<h3>EireRepublic</h3>
-								</div>
-								<ul class="project__tags">
-									<li>WordPress</li>
-									<li>CSS</li>
-									<li>PHP</li>
-								</ul>
-							</div>
-							<div class="project__description">
-								<p>EireRepublic is a custom WordPress theme built for an all-Irish themed blog. This project involved restructuring how WordPress was built into the site to make it easier to manage from the admin panel, as well as redesigning the user interface.</p>
-							</div>
-							<ul class="project__links">
-								<li><a href="https://github.com/jaleeson11/eirerepublic" target="_blank">Repo</a></li>
-							</ul>
-						</div>
-					</article>
-				</div>
-			</section>
-			<section id="contact">
-				<div class="heading">
-					<small>feel free to</small>
-					<h2>Get In Touch</h2>
-				</div>
-				<div class="row">
-					<div class="col-md-6">
-						<div class="section-container section-container--contact">
-							<div class="contact__email">
-								<a href="mailto: jaleeson11@gmail.com">
-									<i class="icon">
-										<img src="assets/images/envelope.svg" alt="Email">
-									</i>
-									<p>jaleeson11@gmail.com</p>
-									<small>email me</small>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="section-container section-container--contact">
-							<div class="contact__social">
-								<a href="https://www.linkedin.com/in/joe-leeson-1328411b2/" target="_blank">
-									<span class="icon">
-										<img src="assets/images/linkedin-blue.svg" alt="LinkedIn">
-									</span>
-									<p>Joe Leeson</p>
-									<small>look me up</small>
-								</a>
-							</div>
+						<div class="section__item contact-block">
+							<a href="https://www.linkedin.com/in/joe-leeson-1328411b2/" class="contact-block__link" target="_blank">
+								<span class="icon">
+									<img class="icon__image" src="assets/images/linkedin-blue.svg" alt="LinkedIn Profile">
+								</span>
+								<p class="contact-block__details">Joe Leeson</p>
+								<small class="contact-block__prompt">look me up</small>
+							</a>
 						</div>
 					</div>
 				</div>
 			</section>
 		</div>
 	</main>
-	<footer>
-		<span>&copy; Joe Leeson 2022</span>
+	<footer class="footer">
+		<div class="container">
+			<span class="footer__copyright">&copy; Copyright 2023 Joe Leeson. All Rights Reserved</span>
+		</div>
 	</footer>
 
 	<script src="dist/app.js"></script>

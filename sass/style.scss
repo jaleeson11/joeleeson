@@ -1,6 +1,5 @@
-/*--------------------------------------------------------------
-# Bootstrap
---------------------------------------------------------------*/
+/* Bootstrap Grid
+--------------------------------------------- */
 @import 'node_modules/bootstrap/scss/bootstrap-grid';
 
 /* Generic
@@ -19,13 +18,15 @@
 
 /* Layout
 --------------------------------------------- */
-@import "layouts/header";
-@import "layouts/footer";
-@import "layouts/main";
+@import "layout/footer";
 
-/* Sections
+/* Components
 --------------------------------------------- */
-@import "sections/hero";
-@import "sections/skills";
-@import "sections/projects";
-@import "sections/contact";
+@import "components/hero";
+@import "components/skills";
+@import "components/project";
+@import "components/contact-block";
+@import "components/section";
+@import "components/buttons";
+@import "components/icons";
+@import "components/navigation";

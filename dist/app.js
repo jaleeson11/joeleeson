@@ -28,7 +28,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var headroom_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! headroom.js */ "./node_modules/headroom.js/dist/headroom.js");
 /* harmony import */ var headroom_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(headroom_js__WEBPACK_IMPORTED_MODULE_0__);
 
-var nav = document.querySelector('header');
+var nav = document.querySelector('.navbar');
 var headroom = new (headroom_js__WEBPACK_IMPORTED_MODULE_0___default())(nav, {
   offset: 150
 });
@@ -53,7 +53,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var nav = _node_modules_jquery_dist_jquery__WEBPACK_IMPORTED_MODULE_0___default()('#navbarNav');
 var toggle = _node_modules_jquery_dist_jquery__WEBPACK_IMPORTED_MODULE_0___default()('.navbar__toggle');
-var links = _node_modules_jquery_dist_jquery__WEBPACK_IMPORTED_MODULE_0___default()('.nav-link');
+var links = _node_modules_jquery_dist_jquery__WEBPACK_IMPORTED_MODULE_0___default()('.nav__link');
 toggle.on('click', function () {
   nav.toggleClass('open');
 

@@ -1,8 +1,9 @@
 .footer {
-	padding: 1.25rem 0;
+	padding: var(--space-md) 0;
 
 	.footer__copyright {
 		display: block;
+		font-size: .8rem;
 		text-align: center;
 	}
 }

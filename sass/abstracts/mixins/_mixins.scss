@@ -1,3 +1,0 @@
-@mixin get_rem_font_size($value) {
-    font-size: calc(round(calc($value / 1%)) / 100) + rem;
-}

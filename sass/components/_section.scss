@@ -1,50 +1,50 @@
 .section {
-	padding: 3.75rem 0;
+	padding: var(--space-xl) 0;
 
 	.section__heading {
 		margin-top: 1rem;
 	}
 
-	.section__container {
-		background-color: #fff;
-		padding: 1.25rem;
-		border-radius: 5px;
-		box-shadow: 0 3px 15px 0 rgba(0,0,0,0.2);
+	.section__sub-heading {
+		display: inline-block;
+		font-weight: 600;
+		color: $color__brand-blue;
+		padding: 0 var(--space-xxs) var(--space-xs);
+		text-transform: uppercase;
+		letter-spacing: .125rem;
+		border-bottom: .25rem solid $color__brand-blue;
+	}
 
-		&.section__container--skills {
-			padding-top: 2.5rem;
+	.section__container {
+		&--shadow {
+			background-color: #fff;
+			padding: var(--space-lg);
+			border-radius: .5rem;
+			box-shadow: 0 3px 15px 0 rgba(0,0,0,0.2);
 		}
 
 		.section__list {
 			display: flex;
 			flex-wrap: wrap;
-			gap: 2.5rem;
-			
-			&--col {
-				flex-direction: column;
-			}
+			flex-direction: column;
+			margin-left: calc(-1 * var(--space-xl));
+			margin-bottom: calc(-1 * var(--space-xl));
 
 			.section__item {
 				flex: 1;
+				margin-left: var(--space-xl);
+				margin-bottom: var(--space-xl);
+
+				&--w100 {
+					flex-basis: 100%;
+				}
 			}
 		}
 	}
 }
 
-@media screen and (min-width: $screen__medium) {
-	.section {
-		padding: 6.25rem 0;
-
-		.section__container {
-			padding: 2.5rem;
-
-			&.section__container--skills {
-				padding-bottom: 0;
-			}
-
-			.section__list {
-				gap: 4rem;
-			}
-		}
+@include media-breakpoint-up(lg) {
+	.section .section__container .section__list {
+		flex-direction: row;
 	}
-}
+} 

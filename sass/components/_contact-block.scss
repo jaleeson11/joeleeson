@@ -1,8 +1,7 @@
 .contact-block {
 	background-color: #fff;
-	min-width: 100%;
-	padding: 2.5rem;
-	border-radius: 5px;
+	padding: var(--space-lg);
+	border-radius: .5rem;
 	box-shadow: 0 3px 15px 0 rgba(0,0,0,0.2);
 	text-align: center;
 
@@ -13,13 +12,16 @@
 	}
 
 	&__prompt {
-		border-bottom: none;
+		font-weight: 600;
+		color: $color__brand-blue;
+		text-transform: uppercase;
+		letter-spacing: .125rem;
 	}
 }
 
-@media screen and (min-width: $screen__large) {
+@include media-breakpoint-up(lg) {
 	.contact-block {
-		min-width: 350px;
+		min-width: 17.5rem;
 
 		&__details {
 			font-size: 1.5rem;

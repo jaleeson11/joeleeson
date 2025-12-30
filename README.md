@@ -1,26 +1,52 @@
-# Joe Leeson - Portfolio
+# Joe Leeson
 
-Personal portfolio website for Joe Leeson, a freelance web developer based near London, UK.
+A portfolio showcasing freelance web development projects and skills.
+
+![Screenshot](screenshot.png)
 
 ## Tech Stack
 
-- HTML5, SCSS, JavaScript
-- jQuery, Bootstrap 5
-- Laravel Mix (build tooling)
+- [Bootstrap 5](https://getbootstrap.com)
+- [jQuery](https://jquery.com)
+- Sass
+- [Laravel Mix](https://laravel-mix.com)
 
-## Development
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14+)
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/jaleeson11/joeleeson.git
+```
+
+2. Navigate to the project directory
+```bash
+cd joeleeson
+```
+
+3. Install dependencies
+```bash
+npm install
+```
+
+4. Run the development server
+```bash
+npm run watch
+```
+
+5. Open `index.html` in your browser
+
+### Build for Production
 
 ```bash
-# Install dependencies
-npm install
-
-# Watch for changes
-npm run watch
-
-# Build for production
 npm run production
 ```
 
-## Author
+## License
 
-**Joe Leeson** - [GitHub](https://github.com/jaleeson11) | [LinkedIn](https://www.linkedin.com/in/joe-leeson/)
+MIT
